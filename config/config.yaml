@@ -1,0 +1,32 @@
+artifacts_root: artifacts
+
+Data_Ingestion:
+  root_dir: artifacts/data_ingestion
+  local_file_path : artifacts/data_ingestion/dataset.csv
+  
+
+Data_Validaton:
+  root_dir: artifacts/data_validation
+  status_file : artifacts/data_validation/status.txt  
+  local_file_validation: artifacts/data_ingestion/dataset.csv
+
+Data_Transformation:
+  root_dir: artifacts/data_transformation
+  local_data_file: artifacts/data_ingestion/dataset.csv
+
+Model_training:
+  root_dir: artifacts/model_training
+  traning_data_file: artifacts/data_transformation
+  model_check_point: "distilbert-base-uncased"
+  model_name: artifacts/model_training/distilbert-base-uncased-finetuned
+  tokenizer_name: artifacts/model_training/tokenizer
+
+
+Model_Evaluation:
+  root_dir: artifacts/model_evaluation
+  Accuracy_file: Accuracy.csv
+  Matrix_file: Matrix.csv
+
+Model_Prediction:
+  model_name: artifacts/model_training/distilbert-base-uncased-finetuned
+  tokenizer_name: artifacts/model_training/tokenizer 

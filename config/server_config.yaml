@@ -1,0 +1,7 @@
+MONGODB:
+  mongodb_url: ""
+  mongodb_name: "FineTuneLlama2_data"
+  mongodb_collection_name: "Promt_assistance"
+
+AWS_SERVER:
+  aws_s3_bucket_name: ""  
