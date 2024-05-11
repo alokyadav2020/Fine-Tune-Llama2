@@ -2,7 +2,7 @@
 
 
 
-### This project is all about how t fine tune Llama2 7b model with Qlora, PEFT fine tune.
+### This project is all about how to fine tune Llama2 7b model with Qlora, PEFT fine tune.
 
 
 Model - Llama-2-7b-chat-hf
