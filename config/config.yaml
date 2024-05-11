@@ -17,8 +17,8 @@ Data_Transformation:
 Model_training:
   root_dir: artifacts/model_training
   traning_data_file: artifacts/data_transformation
-  model_check_point: "distilbert-base-uncased"
-  model_name: artifacts/model_training/distilbert-base-uncased-finetuned
+  model_check_point: "NousResearch/Llama-2-7b-chat-hf"
+  model_name: artifacts/model_training/Llama-2-7b-chat-hf-finetuned
   tokenizer_name: artifacts/model_training/tokenizer
 
 
@@ -28,5 +28,5 @@ Model_Evaluation:
   Matrix_file: Matrix.csv
 
 Model_Prediction:
-  model_name: artifacts/model_training/distilbert-base-uncased-finetuned
+  model_name: artifacts/model_training/Llama-2-7b-chat-hf-finetuned
   tokenizer_name: artifacts/model_training/tokenizer 
